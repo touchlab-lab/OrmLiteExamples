@@ -18,7 +18,7 @@ import co.touchlab.ormliteexamples.tasks.DeleteDataTask;
  */
 public class BaseQueryExampleActivity extends ActionBarActivity
 {
-    private ListView listView;
+    private ListView    listView;
     private ProgressBar progressBar;
 
     @Override
@@ -47,8 +47,12 @@ public class BaseQueryExampleActivity extends ActionBarActivity
                 .hasTasksOfType(TaskQueue.loadQueueDefault(this), DeleteDataTask.class,
                                 CreateDataTask.class);
 
-        listView.setVisibility(dataRunning ? View.GONE : View.VISIBLE);
-        progressBar.setVisibility(dataRunning ? View.VISIBLE : View.GONE);
+        listView.setVisibility(dataRunning
+                                       ? View.GONE
+                                       : View.VISIBLE);
+        progressBar.setVisibility(dataRunning
+                                          ? View.VISIBLE
+                                          : View.GONE);
     }
 
     protected ListView getListView()

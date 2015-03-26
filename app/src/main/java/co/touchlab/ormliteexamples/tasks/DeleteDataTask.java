@@ -3,7 +3,6 @@ import android.content.Context;
 
 import com.j256.ormlite.dao.Dao;
 
-import co.touchlab.android.threading.tasks.Task;
 import co.touchlab.ormliteexamples.database.DatabaseHelper;
 import co.touchlab.ormliteexamples.database.Message;
 

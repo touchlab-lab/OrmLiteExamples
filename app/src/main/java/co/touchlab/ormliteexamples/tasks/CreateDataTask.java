@@ -6,8 +6,6 @@ import com.j256.ormlite.dao.Dao;
 import java.sql.SQLException;
 import java.util.List;
 
-import co.touchlab.android.threading.eventbus.EventBusExt;
-import co.touchlab.android.threading.tasks.Task;
 import co.touchlab.ormliteexamples.database.DatabaseHelper;
 import co.touchlab.ormliteexamples.database.Message;
 
@@ -57,10 +55,11 @@ public class CreateDataTask extends DataSetupMarkerTask
     {
         Dao<Message, Integer> dao = dbHelper.getMessageDao();
 
-        for(int i=0; i<dataCount; i++)
+        for(int i = 0; i < dataCount; i++)
         {
             Message data = new Message();
-            data.message = "Message "+ i;
+            data.message = "Message " + i;
+            data.another = "Another " + i;
             dao.create(data);
         }
     }

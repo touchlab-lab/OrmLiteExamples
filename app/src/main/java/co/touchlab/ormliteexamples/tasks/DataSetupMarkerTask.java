@@ -3,7 +3,6 @@ import android.content.Context;
 
 import co.touchlab.android.threading.eventbus.EventBusExt;
 import co.touchlab.android.threading.tasks.Task;
-import co.touchlab.android.threading.tasks.TaskQueue;
 
 /**
  * Created by kgalligan on 2/21/15.

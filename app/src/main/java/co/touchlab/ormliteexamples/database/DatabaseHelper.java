@@ -14,8 +14,8 @@ import java.sql.SQLException;
  */
 public class DatabaseHelper extends OrmLiteSqliteOpenHelper
 {
-    public static final String DBNAME = "dbname";
-    public static final int DATABASE_VERSION = 1;
+    public static final String DBNAME           = "dbname";
+    public static final int    DATABASE_VERSION = 2;
 
     private static DatabaseHelper INSTANCE;
 
@@ -31,7 +31,7 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper
 
     public DatabaseHelper(Context context)
     {
-        super(context, DBNAME, null, DATABASE_VERSION);
+        super(context, DBNAME, null, DATABASE_VERSION, Message.class);
     }
 
     @Override
@@ -69,7 +69,7 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper
     public void runInTransaction(Runnable runnable)
     {
         SQLiteDatabase database = getWritableDatabase();
-        if(!database.inTransaction())
+        if(! database.inTransaction())
         {
             database.beginTransaction();
         }

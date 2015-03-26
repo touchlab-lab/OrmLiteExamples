@@ -3,13 +3,9 @@ package co.touchlab.ormliteexamples.activities;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.widget.ArrayAdapter;
-import android.widget.ListView;
 
-import co.touchlab.android.threading.eventbus.EventBusExt;
 import co.touchlab.android.threading.tasks.TaskQueue;
-import co.touchlab.ormliteexamples.R;
 import co.touchlab.ormliteexamples.database.Message;
 import co.touchlab.ormliteexamples.tasks.CreateDataTask;
 import co.touchlab.ormliteexamples.tasks.GetDataTask;

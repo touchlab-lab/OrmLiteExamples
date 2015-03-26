@@ -14,6 +14,9 @@ public class Message
     @DatabaseField
     public String message;
 
+    @DatabaseField
+    public String another;
+
     @Override
     public String toString()
     {
