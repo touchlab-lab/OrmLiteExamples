@@ -15,9 +15,6 @@ import co.touchlab.ormliteexamples.tasks.DeleteDataTask;
 
 public class MainActivity extends ActionBarActivity
 {
-
-    private ListView listView;
-
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -33,7 +30,7 @@ public class MainActivity extends ActionBarActivity
 
     public void exampleLoader(View v)
     {
-//        resetDataToCount(50000);
+        resetDataToCount(50000);
         LoaderExampleActivity.callMe(this);
     }
 

@@ -37,6 +37,7 @@ public class QueryExampleActivity extends BaseQueryExampleActivity
         reloadData();
     }
 
+    @SuppressWarnings("UnusedDeclaration")
     public void onEventMainThread(GetDataTask task)
     {
         getListView().setAdapter(
